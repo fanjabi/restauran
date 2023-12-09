@@ -1,3 +1,7 @@
+import Entities.Drink;
+import Entities.Food;
+import Entities.Base.Meal;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -84,10 +88,10 @@ public class MealDataHandler {
                 String[] values = line.split(",");
 
                 switch (values[0]) {
-                    case "Food":
+                    case "Entities.Base.Food":
                         meals.add(new Food(values));
                         break;
-                    case "Drink":
+                    case "Entities.Drink":
                         meals.add(new Drink(values));
                         break;
                     default:

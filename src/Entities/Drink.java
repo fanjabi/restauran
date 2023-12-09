@@ -1,4 +1,8 @@
-public class Drink implements Meal{
+package Entities;
+
+import Entities.Base.Meal;
+
+public class Drink implements Meal {
 
     public enum Type {
         SODA,
@@ -61,7 +65,7 @@ public class Drink implements Meal{
 
     @Override
     public String toString() {
-        return "Drink {\n" +
+        return "Entities.Drink {\n" +
                 "  name='" + name + "',\n" +
                 "  volume=" + volume + ",\n" +
                 "  type=" + type.name() + ",\n" +

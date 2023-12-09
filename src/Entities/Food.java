@@ -1,3 +1,7 @@
+package Entities;
+
+import Entities.Base.Meal;
+
 public class Food implements Meal {
     public enum Type {
         MAIN_COURSE,
@@ -59,7 +63,7 @@ public class Food implements Meal {
 
     @Override
     public String toString() {
-        return "Food {\n" +
+        return "Entities.Base.Food {\n" +
                 "  name='" + name + "',\n" +
                 "  calories=" + calories + ",\n" +
                 "  type=" + type.name() + ",\n" +

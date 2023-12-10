@@ -88,10 +88,10 @@ public class MealDataHandler {
                 String[] values = line.split(",");
 
                 switch (values[0]) {
-                    case "Entities.Base.Food":
+                    case "Food":
                         meals.add(new Food(values));
                         break;
-                    case "Entities.Drink":
+                    case "Drink":
                         meals.add(new Drink(values));
                         break;
                     default:

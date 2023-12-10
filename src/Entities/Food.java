@@ -45,14 +45,14 @@ public class Food implements Meal {
     }
 
     public String toCSV() {
-        return this.getClass().getName() + "," +
+        return this.getClass().getSimpleName() + "," +
                 getName() + "," +
                 getCalories() + "," +
                 getType().name();
     }
 
     public Food(String[] values) throws UnsupportedOperationException {
-        if(!values[0].equals(this.getClass().getName())) {
+        if(!values[0].equals(this.getClass().getSimpleName())) {
             throw new UnsupportedOperationException("Wrong object type provided");
         }
 
@@ -63,7 +63,7 @@ public class Food implements Meal {
 
     @Override
     public String toString() {
-        return "Entities.Base.Food {\n" +
+        return "Food {\n" +
                 "  name='" + name + "',\n" +
                 "  calories=" + calories + ",\n" +
                 "  type=" + type.name() + ",\n" +
